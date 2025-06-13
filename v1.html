@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автосалон</title>
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: rgb(255, 255, 255);
+            padding: 1rem;
+            text-align: center;
+        }
+        #logo {
+			background: url("logotype.jpg"), no-repeat;
+			background-size: 100%;
+			width: 70px;
+			height: 70px;
+			float:left;
+			margin-top:-75px;
+
+		}
+        
+
+        nav {
+            text-align: center;
+            background-color: #555;
+            padding: 0.5rem;
+        }
+
+        nav a, .button {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            display: inline-block;
+            margin-top: 10px;
+            background-color: #555;
+        }
+
+        nav a:hover, .button:hover {
+            background-color: #777;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-around;
+            padding: 2rem;
+            flex-wrap: wrap;
+        }
+
+        main div {
+            flex-basis: 22%;
+            text-align: center;
+            margin-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        main div img {
+            max-width: 100%;
+            height: auto;
+            width: 300px; /* Встановлюєте фіксовану ширину для зображень */
+            height: 200px; /* Встановлюєте фіксовану висоту для зображень */
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Автосалон</h1>
+        <a href="v1.html"><div id="logo"></div></a>
+    </header>
+    <nav>
+        <a href="about.html">Про нас</a>
+        <a href="cabinet.html">Мій кабінет</a>
+        <a href="catalog.html">Весь асортимент</a>
+    </nav>
+    <main>
+        <div>
+            <h2>Нова колекція</h2>
+            <img src="new-colection.jpg" alt="New Collection" width="200">
+            <div class="content">
+                <p>Огляньте асортимент найсучасніших авто </p>
+                <a href="new-colection.html" class="button">Переглянути</a>
+            </div>
+            <script>
+                function redirectNewCollection() {
+                    var url = "new-colection.html";
+                    window.location.href = url;
+                }
+            </script>
+        </div>
+        <div>
+            <h2>Спортивні авто</h2>
+            <img src="sport-avto.jpg" alt="Sport Atvo" width="200">
+            <div class="content">
+                <p>Автомобілі для тих хто любить швидкість</p>
+                <a href="sport-avto.html" class="button">Переглянути</a>
+            </div>
+            <script>
+                function redirectSport() {
+                    var url = "sport-avto.html";
+                    window.location.href = url;
+                }
+            </script>
+        </div>
+        <div>
+            <h2>Сімейні автомобілі</h2>
+            <img src="family-avto.jpg" alt="Family avto" width="200">
+            <div class="content">
+                <p>Надійний товариш для вас та вашої сімї</p>
+                <a href="family-avto.html" class="button">Переглянути</a>
+            </div>
+            <script>
+                function redirectFamily() {
+                    var url = "family-avto.html";
+                    window.location.href = url;
+                }
+            </script>
+        </div>
+        <div>
+            <h2>Бюджетні автомобілі</h2>
+            <img src="budget-cars.jpg" alt="Budget avto" width="200">
+            <div class="content">
+                <p>Найкращі пропозиції по справедливій ціні</p>
+                <a href="budget-cars.html" class="button">Переглянути</a>
+            </div>
+            <script>
+                function redirectBudget() {
+                    var url = "budget-cars.html";
+                    window.location.href = url;
+                }
+            </script>
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 Автосалон - Всі права захищені
+    </footer>
+</body>
+</html>
